@@ -1,0 +1,6 @@
+2023-10-01 13:54:22 - Next  : F2303758
+2023-10-01 13:54:22 - Local API - send value : F2303758
+2023-10-01 13:54:25 - Distant API : https://gestion.atelier.courcyclette.org/api/index.php/uwsyncnumreffactures/nextnumreffacture > GET [6Ec3qkniIZZm26beKPQV5T6599doVlC3]
+2023-10-01 13:54:25 - Distant API - resultat : "\"F2310736\""
+2023-10-01 13:54:25 - Compare local : F2303758 / distant"F2310736"
+2023-10-01 13:54:25 - Next  : F2303758
