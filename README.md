@@ -1,4 +1,4 @@
-Modules de synchronisation des numéros de factures entre 2 instances Dolibarr
+Module de synchronisation des numéros de factures entre 2 instances Dolibarr
 
 Pour confirgurer le module vous devez (sur les 2 dolibarr à synchroniser) : 
  1.  Installer le module en le copiant dans le répertoire htdocs/custom
