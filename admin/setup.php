@@ -105,19 +105,19 @@ echo "<pre style='width:100%;max-with:100%;overflow-wrap: break-word;'>";
 echo "<div><b>Pour confirgurer le module vous devez (sur les 2 dolibarr à synchroniser) : </b></div>";
 echo "<div><b> 1. </b> Activer le module dans la liste des modules</div>";
 echo "<div><b> 2. </b> Activer le module API Rest</div>";
-echo "<div><b> 3. </b> Générer une clé API sur un de vos utilisateur et la reporter la page de configuration du module du 2nd dolibarr (utiliser/créer un utilisateur qui a les droits sur les factures)</div>";
+echo "<div><b> 3. </b> Générer une clé API sur un de vos utilisateurs et la reporter la page de configuration du module du 2nd dolibarr (utiliser/créer un utilisateur qui a les droits sur les factures)</div>";
 echo "<div><b> 4. </b> Définir sur chaque dolibarr le SERVER NAME du 2nd Dolibarr (sans https:// ou / à la fin . (Ex: dolibarr.nomdedomaine.com)</div>";
 echo "<div><b> 5. </b> Dans la liste des modules > Factures et Avoir > confirgurer : il faut activer la numérotation synchrone et definir les mêmes masques de numérotation</div>";
-echo "<div><b> 6. </b> Une fois la numérotation synchron activée sur les 2 dolibarr, les informations API renseignées, vous pourrez voir sur la page ci-dessous l'information <b>Prochain nuiméro de facture calculé</b>. S'il est à 0 c'est que vous avez une erreur.<br/>S'il est différents c'est que les API sont mal configuré ou les masques de numérotation ne sont pas les même. S'ils sont identique c'est que la configuration est bonne.</div>";
+echo "<div><b> 6. </b> Une fois la numérotation synchrone activée sur les 2 dolibarr, les informations API renseignées, vous pourrez voir sur la page ci-dessous l'information <b>Prochain numéro de facture calculé</b>. Si elle est à 0 c'est que vous avez une erreur.<br/>Si elle est différente c'est que les API sont mal configurées ou les masques de numérotation ne sont pas les mêmes. Si elles est identique c'est que la configuration est bonne.</div>";
 
 echo "<div><br/><br/></div>";
 echo "<div><b>En cas de problème : </b></div>";
-echo "<div>- consulter : <a href='". DOL_URL_ROOT ."/api/index.php/explorer/' target='_blank'>". DOL_URL_ROOT ."/api/index.php/explorer/</a> et saisr la clé API générer sur ce même serveur dans le champs DOLAPIKEY</div>";
+echo "<div>- consulter : <a href='". DOL_URL_ROOT ."/api/index.php/explorer/' target='_blank'>". DOL_URL_ROOT ."/api/index.php/explorer/</a> et saisr la clé API générée sur cette instance de dolibarr dans le champs DOLAPIKEY</div>";
 echo "<div>&nbsp;&nbsp;et Vérifier qu'existe 'uwsyncnumreffactures' > 'List Operations' > GET /uwsyncnumreffactures/nextnumreffacture (A verifier sur les 2 dolibarr)</div>";
 echo "<div><br/></div>";
 echo "<div>- Vous pouvez aussi activer les log en mettant FACTURE_SYNCHRONE_SYNCHRO_LOG à 1 et consulter les log dans custom/uwsyncnumreffactures/logs (le faire sur les 2 dolibarr pour bien voir les interactions de chaque côté)</div>";
 echo "<div><br/></div>";
-echo "<div>- Recharger cette page suffit pour tester l'api et consulter les logs. En effet pour afficher le <b>Prochain nuiméro de facture calculé</b> ci-dessous les appels inter-dolibarr sont fait </div>";
+echo "<div>- Recharger cette page suffit pour tester l'api et consulter les logs. En effet pour afficher le <b>Prochain numéro de facture calculé</b> ci-dessous les appels inter-dolibarr sont fait </div>";
 echo "</pre>";
 
 
