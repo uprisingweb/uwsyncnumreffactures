@@ -1,6 +1,6 @@
 Module de synchronisation des numéros de factures entre 2 instances Dolibarr
 
-Pour confirgurer le module vous devez (sur les 2 dolibarr à synchroniser) : 
+Pour configurer le module vous devez (sur les 2 dolibarr à synchroniser) : 
  1.  Installer le module en le copiant dans le répertoire htdocs/custom
  2.  Activer le module dans la liste des modules
  3.  Activer le module API Rest
@@ -14,7 +14,7 @@ Pour confirgurer le module vous devez (sur les 2 dolibarr à synchroniser) :
 
 
 En cas de problème : 
-- consulter : /api/index.php/explorer/ et saisr la clé API généré sur cette instance de dolibarr dans le champs DOLAPIKEY
+- consulter : /api/index.php/explorer/ et saisr la clé API générée sur cette instance de dolibarr dans le champs DOLAPIKEY
   et Vérifier qu'existe 'uwsyncnumreffactures' > 'List Operations' > GET /uwsyncnumreffactures/nextnumreffacture (A verifier sur les 2 dolibarr)
 - Vous pouvez aussi sur la "page de configuration du module"(*), activer les log en mettant FACTURE_SYNCHRONE_SYNCHRO_LOG à 1 et consulter les log dans custom/uwsyncnumreffactures/logs (le faire sur les 2 dolibarr pour bien voir les interactions de chaque côté)
 - Recharger la "page de configuration du module"(*) suffit pour tester l'api et consulter les logs. En effet pour afficher le Prochain numéro de facture calculé ci-dessous les appels inter-dolibarr sont fait
