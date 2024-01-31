@@ -182,7 +182,7 @@ class mod_facture_synchrone extends ModeleNumRefFactures
 
 
         if($callType == 'local') { // on verifie que c'est pas l'api du second dolibarr qui fait l'appel (pour eviter des api recursifs)
-            $numFinalDistant = $this->getNextValueDistant($mode);
+            $numFinalDistant = $this->getNextValueDistant($mode,$invoice->type);
             // uwApiUtils::logfile("CallDistant : " . $numFinalDistant );
             // echo "<pre>DISTANT</pre>";
             // echo "<pre>";
@@ -219,9 +219,9 @@ class mod_facture_synchrone extends ModeleNumRefFactures
     }
 
 
-    function getNextValueDistant($mode)
+    function getNextValueDistant($mode, $type)
     {
-        $data = array( 'mode' => $mode );
+        $data = array( 'mode' => $mode, 'type' => $type );
         $method = 'GET';
         $endpoint = 'uwsyncnumreffactures/nextnumreffacture';
 
