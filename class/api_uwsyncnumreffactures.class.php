@@ -41,7 +41,7 @@ class UwSyncNumRefFactures extends DolibarrApi
     {
         global $conf;
 
-        uwApiUtils::logfile("Local API - mode " . $_GET['mode'] . " - type " . $_GET['type']);
+        uwApiUtils::logfile("Local API - mode " . $_GET['mode'] . " - type " . $_GET['type'] . " - date " . $_GET['date']);
 
         if(!$_GET['mode'])
             $_GET['mode'] = 'next';
@@ -52,6 +52,8 @@ class UwSyncNumRefFactures extends DolibarrApi
         $facture = new Facture($this->db);
         $facture->initAsSpecimen();
         $facture->type=$_GET['type'];
+        if($_GET['date'])
+            $facture->date = $_GET['date'];
 
         $societe = new societe($this->db);
         $societe->setMysoc($conf);
